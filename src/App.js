@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Script from 'react-load-script';
 
 function App() {
 	const load = () => {
-		MemberStack.onReady.then(function(member) {
-			// do things with the member object
-			member['email'];
-			member['name'];
-
-			// member's specific page if set.
-			member.memberPage;
-
-			// check if member is logged in
-			member.loggedIn; // returns true or false
-		});
+		// MemberStack.onReady.then(function(member) {
+		// 	// do things with the member object
+		// 	member['email'];
+		// 	member['name'];
+		// 	// member's specific page if set.
+		// 	member.memberPage;
+		// 	// check if member is logged in
+		// 	member.loggedIn; // returns true or false
+		// });
 	};
 
 	useEffect(() => {
